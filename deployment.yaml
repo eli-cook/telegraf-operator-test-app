@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-app
+  template:
+    metadata:
+      annotations:
+        telegraf.influxdata.com/class: "default"
+        telegraf.influxdata.com/configmap: "test-app-telegraf-annotations"
+      labels:
+        app: test-app
+    spec:
+      containers:
+      - name: test-app
+        image: us-west1-docker.pkg.dev/gcp-zencore-okta/telegraf-operator-test-app/telegraf-operator-test-app:latest
+        ports:
+        - containerPort: 2112
