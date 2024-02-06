@@ -2,9 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: test-app-telegraf-annotations
-  namespace: telegraf-operator
+  namespace: default
 data:
-  class: "infra"
   port: "2112"
   scheme: "http"
   path: "/metrics"
