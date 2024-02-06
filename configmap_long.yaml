@@ -1,0 +1,135 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-app-telegraf-annotations
+  namespace: default
+data:
+  inputs: |+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:2112/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9000/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9001/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9002/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9003/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9004/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9005/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9006/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9007/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9008/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9009/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9010/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9011/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9012/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9013/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9014/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9015/metrics"]
+      interval = "30s"
+      metric_version = 2
+              [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9016/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9008/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9017/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9010/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9018/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9019/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9020/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9021/metrics"]
+      interval = "30s"
+      metric_version = 2
+
+    [[inputs.prometheus]]
+      urls = ["http://127.0.0.1:9022/metrics"]
+      interval = "30s"
+      metric_version = 2
